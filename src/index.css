@@ -28,3 +28,26 @@ body {
     background-color: crimson;
     border: 3px solid #fff;
 }
+
+h1 {
+    color: white;
+}
+
+.scroll-container {
+    width: 100%;
+    /* fix width */
+    overflow: hidden;
+    white-space: nowrap;
+    /* border: 1px solid #ccc; */
+    margin: 50px auto;
+}
+
+.scroll-text {
+    color: #ccc;
+    display: inline-block;
+    white-space: nowrap;
+    /* font-size: x-large; */
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}

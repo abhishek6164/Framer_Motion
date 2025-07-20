@@ -3,21 +3,18 @@ import { motion } from 'framer-motion'
 const App = () => {
 
   return (
-    <div>
-      <motion.div className='box ' animate={{
-        x: 1000,
-        rotate: 360,
-        animationDelay: 3,
 
-      }}
-       transition={{
-        duration: 3,
-        delay: 1,
-        
-      }} 
-       >
-
-
+    <div className="scroll-container">
+      <motion.div
+        className="scroll-text"
+        animate={{ x: ["100%", "-100%"] }}
+        transition={{
+          repeat: Infinity,
+          duration: 10,
+          ease: "linear",
+        }}
+      >
+        Abhishek Radhakishan Pipariye &nbsp; 🚀&nbsp; Abhishek Radhakishan Pipariye &nbsp; 🚀&nbsp; {/* repeat for infinite feel */}
       </motion.div>
     </div>
   )
