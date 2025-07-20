@@ -1,22 +1,20 @@
 import React from 'react'
-import {motion} from 'motion/react'
+import { motion , useScroll } from 'motion/react'
+
+
 const App = () => {
+  const scrollYProgress = useScroll().scrollYProgress
   return (
-    <motion.div 
-      drag
-      whileDrag={{
-        scale:0.8
-      }}
-      dragConstraints={{
-        left:0,
-        top:0,
-        
-      }}
-    className='box'
-    >
-    
-      
-    </motion.div>
+    <div className='text-white  font-mono p-20  bg-cyan-950 text-center'>
+
+      <motion.div style={{
+        scaleX:scrollYProgress
+      }} className='bg-red-500 origin-left  w-full rounded-full h-2 fixed  top-0 left-0'></motion.div>
+
+      <h2 className='text-4xl font-bold mb-10 '>Abhishek Radhakishan Pipariye GT650 </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam ab autem, corporis corrupti, accusamus consectetur officiis asperiores porro amet error, ut minus quam quo sint laborum rerum dolorum repudiandae quos quis molestias a aliquam. Iure accusamus impedit ducimus beatae. Iusto ex reiciendis labore voluptatum quia esse nihil animi inventore ea quibusdam cum laborum distinctio ullam impedit similique consequatur, accusamus, corrupti, debitis minus consequuntur praesentium autem ad optio earum! Aliquid, eaque ad. Recusandae, pariatur perspiciatis molestias vitae ducimus fuga dolore, saepe numquam modi aliquid mollitia maxime minima nesciunt quisquam sit quae, doloremque in? Quasi voluptatem non dolorem. Dolorum nesciunt et laborum alias vel, magnam dolores est minima consequatur error tempore nisi provident rerum atque libero vero? Voluptas sit beatae soluta modi ex fugit hic. Pariatur quis magnam, corrupti expedita qui consequuntur consectetur amet excepturi sunt omnis, cumque ut modi dolores eligendi? Eveniet, exercitationem. Iure ullam officia quidem asperiores, consectetur perspiciatis accusantium repellat culpa sunt aliquam harum, expedita, quasi ducimus impedit modi incidunt adipisci. Magni corporis cumque harum iure libero cum itaque laboriosam doloremque ipsam quo ullam aperiam aut laborum quia rerum fugit, et modi perferendis? Ad, rem enim quidem iusto corrupti laboriosam, animi deserunt tenetur, sint tempore voluptatum necessitatibus est! <br /> <br />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam nobis est autem tempora incidunt quidem officia laudantium. Obcaecati iste natus perspiciatis, sapiente quo eius aperiam cum dicta? Eveniet, excepturi libero laborum sunt ullam quaerat, labore, nobis quis repellat sapiente fugit. Magni voluptates voluptatum in voluptate maiores. Sapiente, nostrum unde perferendis fugit nemo ad distinctio maiores? Nam et esse neque dolor at incidunt nulla saepe tempora dolorum magnam aspernatur, veritatis ipsa explicabo facere nobis ducimus unde provident maiores aliquid tenetur. Deleniti voluptatum eos beatae qui sapiente sequi distinctio ut ducimus at. Temporibus corporis voluptates ullam animi, quasi earum nam omnis dicta eaque vitae maxime asperiores libero ut quos beatae culpa sapiente ad distinctio perferendis corrupti excepturi? Eveniet distinctio voluptates sint maiores quisquam officiis facere dolorem error sapiente hic, similique eos dolor obcaecati fugit cum ipsum dolorum recusandae! Natus accusantium perspiciatis, ut debitis sunt maiores quibusdam! Harum rerum, ad maxime laudantium molestias corporis quas aperiam est in, officiis, accusantium autem maiores placeat veniam aut fugit ex illo pariatur ipsa. Natus optio iure officiis nisi ea maiores laudantium odit? Doloremque magni, corrupti, pariatur in blanditiis vitae aut unde minus perspiciatis nisi labore optio quos porro molestiae, deleniti facilis voluptates! Numquam, officia. Possimus?  <br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis animi tenetur dolores reiciendis iusto id distinctio obcaecati placeat officia optio, ad omnis voluptatibus nulla perferendis, alias numquam excepturi ex voluptatem? Inventore veniam error similique rerum facere in enim, molestias nobis deleniti totam delectus doloribus molestiae est quia. Consectetur, libero asperiores deserunt alias commodi vero nesciunt! Adipisci nobis labore ad, reiciendis minima, quisquam libero neque doloribus magni laboriosam aut iste et mollitia eaque non nesciunt cupiditate odio molestiae accusamus repellendus distinctio dicta ea? Aliquam accusantium magnam esse, possimus illo atque dolor suscipit commodi ut voluptatem itaque quisquam deserunt aperiam expedita labore eaque minima, repellendus delectus impedit praesentium? Sint, distinctio nobis quia eum eveniet illo iste. Sit, quae a minima unde consequatur accusantium veritatis consequuntur quisquam dignissimos ea cumque, eum quo. Ex eos optio, cumque placeat harum modi dicta eligendi fugiat velit, provident sint, ducimus eius ipsam ratione maxime repudiandae facilis? Repellat quos nihil earum recusandae tenetur magnam animi? Veritatis vitae temporibus, eius quasi officiis cupiditate sed nobis perspiciatis ex. Provident maiores natus quos sed eius inventore amet rerum reprehenderit! Animi necessitatibus ea ipsum pariatur ipsa, dolorum quasi incidunt amet eius tempora voluptates in culpa mollitia blanditiis praesentium libero reprehenderit ratione error a? In aperiam assumenda maiores accusamus quia consequuntur voluptate asperiores doloribus! Praesentium eligendi ullam, consequuntur neque fuga laboriosam, ipsum officia delectus aliquam ipsa necessitatibus aspernatur reiciendis dolorem alias debitis rerum, sequi illum facere at voluptatem consectetur quam incidunt? Dicta, nam facere. Libero perspiciatis, veritatis quisquam fugit itaque id, quod quae magnam doloribus velit hic unde cupiditate fuga blanditiis odio dignissimos ipsa aperiam deserunt veniam corporis cumque? Molestiae odio impedit maxime veritatis adipisci quo obcaecati, totam corporis fugit possimus dignissimos ipsum ab cumque voluptas est, iure dicta doloremque neque quam quas! Cupiditate saepe qui assumenda, optio aspernatur inventore dicta nisi. </p>
+    </div>
   )
 }
 
